@@ -1,32 +1,33 @@
-//package org.dsa.array;
-//
-//public class TrappingRainWater {
-//
-//    public static void main(String[] args) {
-//        System.out.println(trap(new int[]{4,2,0,3,2,5}));
-//    }
-//
-//    static int trap(int[] height) {
-//        int l=1,r=height.length-2;
-//        int lmax=height[0], rmax = height[height.length-1];
-//        int ans=0;
-//
-//        while(l<=r){
-//
-//            if(rmax<=lmax){
-//                ans+= Math.max(0, rmax-height[r]);
-//                rmax = Math.max(rmax, height[r]);
-//                r--;
-//            }else{
-//                ans+= Math.max(0, lmax-height[l]);
-//                lmax = Math.max(lmax, height[l]);
-//                l++;
-//            }
-//        }
-//        return ans;
-//}
-//
-//
+package org.dsa.array;
+
+public class TrappingRainWater {
+
+    public static void main(String[] args) {
+        System.out.println(trap(new int[]{4, 2, 0, 3, 2, 5}));
+    }
+
+    static int trap(int[] height) {
+        int l = 1, r = height.length - 2;
+        int lmax = height[0], rmax = height[height.length - 1];
+        int ans = 0;
+
+        while (l <= r) {
+
+            if (rmax <= lmax) {
+                ans += Math.max(0, rmax - height[r]);
+                rmax = Math.max(rmax, height[r]);
+                r--;
+            } else {
+                ans += Math.max(0, lmax - height[l]);
+                lmax = Math.max(lmax, height[l]);
+                l++;
+            }
+        }
+        return ans;
+    }
+}
+
+
 //
 //    class Solution {
 //
@@ -92,7 +93,7 @@
 //    }
 //
 //
-//
-//
-//
-//
+
+
+
+
