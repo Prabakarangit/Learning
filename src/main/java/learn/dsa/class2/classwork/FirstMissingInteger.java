@@ -1,6 +1,6 @@
-package learn.dsa.array;
+package learn.dsa.class2.classwork;
 
-public class FindMissingInteger {
+public class FirstMissingInteger {
     public int firstMissingPositive(int[] A) {
 
         int n =A.length;

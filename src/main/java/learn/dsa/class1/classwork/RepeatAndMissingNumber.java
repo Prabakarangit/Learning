@@ -1,9 +1,10 @@
-package learn.dsa.array;
+package learn.dsa.class1.classwork;
 
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
+//https://www.interviewbit.com/problems/repeat-and-missing-number-array/?authuser=0
 public class RepeatAndMissingNumber {
 
     public static void main(String[] args) {
@@ -33,6 +34,34 @@ public class RepeatAndMissingNumber {
         int r = ((y/x)+x)/2;
         int m = ((y/x)-x)/2;
         return new ArrayList(Arrays.asList(r,m));
+
+    }
+
+    //with typecasting
+    public ArrayList<Integer> repeatedNumber1(final List<Integer> A) {
+
+        long n = A.size();
+
+        long e = n*(n+1)/2;
+        long es = (n*(n+1)*((2*n)+1))/6;
+
+        long a = 0;
+        long as = 0;
+
+        for(Integer i : A){
+            long ilong = (long)i;
+
+            a = (long)(a+ilong);
+            as = (long)(as + (long)(ilong * ilong));
+        }
+
+        long x = a - e;
+        long y = as - es;
+
+        long m = ((y/x) -x)/2;
+        long r = ((y/x)+x)/2;
+
+        return new ArrayList<>(Arrays.asList((int)r, (int)m));
 
 
     }

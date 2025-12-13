@@ -1,5 +1,6 @@
-package learn.dsa.array;
+package learn.dsa.class2.classwork;
 
+//https://leetcode.com/problems/corporate-flight-bookings/?authuser=1
 public class CorporateFlightBookings {
 
     public static void main(String[] args) {
