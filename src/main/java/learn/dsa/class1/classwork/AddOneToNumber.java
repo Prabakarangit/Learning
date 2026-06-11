@@ -22,7 +22,6 @@ public class AddOneToNumber {
         System.out.println(plusOne(A));
     }
     public static List<Integer> plusOne(List<Integer> A) {
-
         boolean allNine=true;
         for(int i = A.size()-1; i >= 0; i--){
             if(A.get(i) == 9){

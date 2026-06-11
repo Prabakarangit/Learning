@@ -1,4 +1,4 @@
-package learn.dsa.array;
+package learn.dsa.class2.classwork;
 
 public class MajorityElementN2 {
     public int majorityElement(int[] nums) {

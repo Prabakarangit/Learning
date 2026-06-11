@@ -1,4 +1,4 @@
-package learn.dsa.array;
+package learn.dsa.class4.classwork;
 
 import java.util.ArrayList;
 
@@ -18,7 +18,7 @@ public class IndexesOfSubArraySum {
 
         ArrayList<Integer> res = new ArrayList<>();
 
-        while(i< arr.length && j < arr.length){
+        while(i< arr.length){
             if(sum == target){
                 res.add(i+1);
                 res.add(j+1);

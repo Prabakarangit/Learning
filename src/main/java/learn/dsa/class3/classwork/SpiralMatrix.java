@@ -1,4 +1,4 @@
-package learn.dsa.array;
+package learn.dsa.class3.classwork;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -11,7 +11,7 @@ public class SpiralMatrix {
 
         List<Integer> res = new ArrayList<>();
         int n = matrix.length;
-        int T=0;
+        int T=0;//toggle counter
         while(u<=d && l<=r){
 
             if(T==0){

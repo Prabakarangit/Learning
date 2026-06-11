@@ -1,4 +1,4 @@
-package learn.dsa.array;
+package learn.dsa.class3.classwork;
 
 import java.util.ArrayList;
 import java.util.List;
